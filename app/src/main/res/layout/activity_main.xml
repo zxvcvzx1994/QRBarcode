@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.cvcompany.vo.myapplication.MainActivity">
+
+    <ImageView
+        android:id="@+id/img"
+        android:src="@mipmap/ic_launcher_round"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="30dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+    <TextView
+        android:id="@+id/txtName"
+        android:text="tex"
+        android:textSize="24dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="28dp"
+        android:layout_marginStart="28dp"
+        android:layout_below="@+id/img"
+        android:layout_alignLeft="@+id/img"
+        android:layout_alignStart="@+id/img"
+        android:layout_marginTop="33dp" />
+    <TextView
+        android:id="@+id/txtAddress"
+        android:text="diachi"
+        android:textSize="24dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/txtName"
+        android:layout_alignBottom="@+id/txtName"
+        android:layout_alignRight="@+id/img"
+        android:layout_alignEnd="@+id/img" />
+    <Button
+        android:id="@+id/btn"
+        android:text="QRScan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtName"
+        android:layout_toLeftOf="@+id/txtAddress"
+        android:layout_toStartOf="@+id/txtAddress"
+        android:layout_marginTop="29dp" />
+</RelativeLayout>
